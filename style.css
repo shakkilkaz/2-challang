@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-bar{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./background.png);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+    .titles{
+        font-size: 70px;
+        line-height: 100px;
+        font-weight: bold;
+        height: 100PX;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .detels p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        font-family: sans-serif;
+    
+    }
+    button{
+        padding: 15px 25px;
+        margin: 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        border: 2px solid;
+        color: aliceblue; 
+        cursor: pointer;
+        background:linear-gradient( to right, transparent 50%, #ffc107 50%)  ;
+        background-size: 200%;
+        background-position: left;
+        transition: background-position 0.5s ;
+    }
+    button:hover{
+        background-position: right;
+        color: #000;
+    }
+    .slider{
+        color: #ffc107;
+        margin-left: 12PX;
+        box-sizing: border-box;
+        animation:slider 6s linear infinite ;
+    }
+    @keyframes slider{
+       
+          0%{margin-top: -400px;}
+          5%{margin-top: -200px;}
+          30%{margin-top: -200px;}
+          35%{margin-top: 0px;}
+          65%{margin-top: 0px;}
+          70%{margin-top: 200px;}
+          100%{margin-top: 200px;}
+        
+    } 
+
+.menu-bar ul {
+    background-color: green;
+    text-align: center;
+
+}
+.menu-bar ul li{
+    display: inline-flex;
+    margin: 20px;
+    padding: 20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.menu-bar .fa{
+    color: aliceblue;
+    margin-right: 8px;
+   font-size: 20px;
+}
+.active,.menu-bar ul li:hover{
+    background-color: rgb(195, 168, 11);
+    border-radius: 3px;
+}
+.about{
+    display: none;
+}
+
+.menu-bar ul li:hover .about{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .about ul li{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .about ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted aliceblue;
+    text-align: left;
+    background: transparent;
+}
+
+.fa-angle-right{
+    float: right;
+}
+
+.menu-bar ul li:hover .about ul li:last-child{
+
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .about ul li a:hover{
+ 
+    color: red;
+}
+.marketing{
+    display: none;
+}
+.hover-me:hover .marketing{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(17, 144, 17);
+}
+
+.tarinig{
+    display: none;
+}
+.menu-bar ul li:hover .tarinig{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .tarinig ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted aliceblue;
+    text-align: left;
+    background: transparent;
+}
+
+.fa-angle-right{
+    float: right;
+}
+
+.menu-bar ul li:hover .tarinig ul li{
+    display: block;
+    margin: 10px;
+}
+
+
+.menu-bar ul li:hover .Develop-Ment ul li:last-child{
+
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .Develop-Ment ul li a:hover{
+ 
+    color: red;
+}
+.Develop-Ment{
+    display: none;
+}
+.hover-me:hover .Develop-Ment{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(17, 144, 17);
+}
+
+.detels{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+.titles{
+    font-size: 70px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100PX;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.detels p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+
+}
+button{
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid;
+    color: aliceblue; 
+    cursor: pointer;
+    background:linear-gradient( to right, transparent 50%, #ffc107 50%)  ;
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s ;
+}
+button:hover{
+    background-position: right;
+    color: #000;
+}
+.slider{
+    color: #ffc107;
+    margin-left: 12PX;
+    box-sizing: border-box;
+    animation:slider 6s linear infinite ;
+}
+@keyframes slider{
+   
+      0%{margin-top: -400px;}
+      5%{margin-top: -200px;}
+      30%{margin-top: -200px;}
+      35%{margin-top: 0px;}
+      65%{margin-top: 0px;}
+      70%{margin-top: 200px;}
+      100%{margin-top: 200px;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
